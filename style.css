@@ -85,7 +85,7 @@ a {
   justify-content: flex-end; /* Align items to the right */
   list-style-type: none;
   margin: 0;
-  height: 80px;
+  height: 76px;
   overflow: hidden;
   background-color: #555;
   margin: -8px;
@@ -99,7 +99,7 @@ a {
 .menu li a {
   display: inline-block;
   color: white;
-  font-size: larger;
+  font-size: 16px;
   text-align: center;
   margin: 0px;
   padding: 28px 16px;
