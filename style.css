@@ -1,0 +1,135 @@
+:root {
+  --mainColor: #f48020; /* color: var(--mainColor) */
+  --secondColor: #333333;
+  --thirdColor: #d3cec9;
+  --textColor: var(--secondColor);
+}
+
+body {
+  background-color: var(--thirdColor);
+  /* background-image: linear-gradient(white -10%, var(--mainColor) 150px, black 140%); */
+  color: white;
+  font-family: 'Verdana', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: var(--secondColor);
+  margin-top: 50px;
+}
+
+p {
+  color: var(--secondColor);
+  max-width: 35%;
+  margin: auto;
+  font-size: 22px;
+}
+
+a {
+  color: var(--textColor);
+}
+
+/* Button Hover Animation (Menu) */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--mainColor);
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--mainColor);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Custom Buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #9b9b9b;
+}
+
+.button:hover {
+  background-color: gray;
+  color: white;
+}
+
+/* Header Menu */
+.menu {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  justify-content: flex-end; /* Align items to the right */
+  list-style-type: none;
+  margin: 0;
+  height: 80px;
+  overflow: hidden;
+  background-color: #555;
+  margin: -8px;
+  padding-left: 10px;
+}
+
+.menu li {
+  display: inline-block; /* Display li elements horizontally */
+}
+
+.menu li a {
+  display: inline-block;
+  color: white;
+  font-size: larger;
+  text-align: center;
+  margin: 0px;
+  padding: 28px 16px;
+  text-decoration: none;
+}
+
+.menu li a img {
+  width:140px;
+  height:140px; 
+  border-radius:100px;
+  object-fit: fill;
+}
+
+.menu li a:hover {
+  background-color: rgb(52, 52, 52);
+}
+
+
+/* Footer Menu */
+.footer-menu {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.footer-menu a {
+  color: gray;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
