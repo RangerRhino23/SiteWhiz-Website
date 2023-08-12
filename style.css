@@ -25,7 +25,7 @@ h2 {
 
 p {
   color: var(--secondColor);
-  max-width: 35%;
+  max-width: 50%;
   margin: auto;
   font-size: 22px;
 }
